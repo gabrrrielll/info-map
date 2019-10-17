@@ -1,0 +1,25 @@
+#map {
+    height: 90%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#infoCountry {
+    height: 30;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+#infoDay {
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
