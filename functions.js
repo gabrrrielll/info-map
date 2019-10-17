@@ -43,7 +43,7 @@ function initMap(lat, lng) {
     }
 
     function getData(lat, lng) {
-        var apicall = "http://api.timezonedb.com/v2.1/get-time-zone?key=6F6YBU30VGBM&format=json&by=position&lat=" + lat + "&lng=" + lng;
+        var apicall = "https://api.timezonedb.com/v2.1/get-time-zone?key=6F6YBU30VGBM&format=json&by=position&lat=" + lat + "&lng=" + lng;
 
         var xhr = new XMLHttpRequest(); // create new XMLHttpRequest object
         xhr.open("GET", apicall); // open GET request
