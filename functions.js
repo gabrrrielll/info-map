@@ -26,7 +26,7 @@ function initMap(lat, lng) {
                     //console.log('getDayLimits-------->', output.results)
                     var sunriseTime = new Date(output.results.sunrise).getTime() / 1000; //extract sunrise time and convert in UNIX time
                     var sunsetTime = new Date(output.results.sunset).getTime() / 1000; //extras sunset time and convert in UNIX time
-                    var localTimeStamp = new Date(response.data.results.sunrise).getTimezoneOffset() * 60 + time;
+                    var localTimeStamp = new Date(output.results.sunset).getTimezoneOffset() * 60 + time;
 
                     //console.log("sunrise to compare--->", sunriseTime, time, sunsetTime)
                     if (sunriseTime < localTimeStamp && localTimeStamp < sunsetTime) {
